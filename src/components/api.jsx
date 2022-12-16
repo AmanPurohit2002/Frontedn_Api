@@ -16,12 +16,14 @@ const fetchData=async(term)=>{
 
     const data=json.results;
 
-    console.log(data);
+    // console.log(json);
     
-    return json;
+    console.log(data);
+
+    return data;
 }
 
-// fetchData();
+
 
 
 export default fetchData; 
