@@ -1,7 +1,10 @@
+import '../css/ImageShow.css';
+
+
 const ImageShow=({image})=>{
     return (
         <div>
-            <img alt ={image.alt_description} key={image.id} src={image.urls.small}/>
+            <img alt ={image.alt_description} src={image.urls.small}/>
         </div>
     )
 }

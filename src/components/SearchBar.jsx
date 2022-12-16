@@ -1,4 +1,5 @@
 import { useState } from "react";
+import '../css/SearchBar.css';
 
 
 const SearchBar=({onSubmit1})=>{
@@ -16,8 +17,9 @@ const SearchBar=({onSubmit1})=>{
     }
 
     return (
-        <div>
+        <div className="search-bar">
         <form onSubmit={handleSubmit}>
+            <label>Enter Search Term</label>
             <input type ="text"  value={term} onChange={handleChange}/>
             {term.length <5 && 'text is too small'}
         </form>
